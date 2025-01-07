@@ -8,3 +8,7 @@ Slot 1 -
 LMS (làm bài Quizz/Workshop/Assignment):
 Course ID: PRO192LNT / PASSWORD: PRO192LNT@2025
 ----
+Edunext (Shcedule / Disscussion)
+httphttps://fu-edunext.fpt.edu.vn/course?id=2587&&classId=14757
+----
+
