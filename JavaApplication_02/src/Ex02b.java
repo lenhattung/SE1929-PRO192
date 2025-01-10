@@ -32,5 +32,15 @@ public class Ex02b {
         System.out.println(y); // 6
         System.out.println(z); // 5
         
+        System.out.println("");
+        int b1 = 15;
+        b1 = b1>>1;
+        System.out.println(b1);
+        b1 = b1<<1;
+        System.out.println(b1);
+        
+        b1 = -100;
+        System.out.println(b1>>1);
+        System.out.println(b1>>>1);
     }
 }
