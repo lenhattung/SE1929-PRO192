@@ -30,5 +30,9 @@ public class Ex02c {
         ketQua = (x%2==0)?"chan":"le";
         System.out.println(ketQua);
         
+        
+        System.out.println(5+"+"+2+"="+5+2);
+        System.out.println(5+"%"+2+"="+5%2);
+        //System.out.println(5/0);
     }
 }
