@@ -11,5 +11,9 @@
 public class Test {
     public static void main(String[] args){
        Student s1 = new Student();
+       System.out.println(s1);
+       
+       Student s2 = new Student("002", "Nguyen Xuan Son", 1997, "Nam Dinh");
+        System.out.println(s2);
     }
 }
