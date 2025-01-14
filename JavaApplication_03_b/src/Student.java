@@ -60,6 +60,5 @@ public class Student {
     public String getAddress() {
         return address;
     }
-
     
 }
