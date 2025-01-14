@@ -14,6 +14,16 @@ public class Test {
        System.out.println(s1);
        
        Student s2 = new Student("002", "Nguyen Xuan Son", 1997, "Nam Dinh");
-        System.out.println(s2);
+       System.out.println(s2);
+       
+       //s1.name = "";
+       //s2.bYear=-1;
+       s2.setbYear(-1);
+       System.out.println(s2);
+       
+       s2.setbYear(1998);
+       System.out.println(s2);
+       
+        System.out.println(s2.getName());
     }
 }
