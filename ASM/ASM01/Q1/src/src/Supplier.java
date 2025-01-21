@@ -94,10 +94,11 @@ public class Supplier {
             temp[i] = word;
         }
         s = String.join(" ", temp);
-        
+        // Xoa 2 khoang trang gan nhau
         while(s.indexOf("  ")>-1){
             s = s.replace("  ", " ");
         }
+        // xoa khoang trang du thua o 2 dau chuoi
         s = s.trim();
         return s;
     }
