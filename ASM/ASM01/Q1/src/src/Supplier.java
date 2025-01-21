@@ -102,5 +102,14 @@ public class Supplier {
         s = s.trim();
         return s;
     }
+    public String getStatusValue(){
+        return (status)?"Available":"Unavailable";
+    }
+    @Override
+    public String toString() {
+        return getId()+","+getName()+","+getAddress()+","+getPhone()+","+getStatusValue();
+    }
+    
+    
 
 }
