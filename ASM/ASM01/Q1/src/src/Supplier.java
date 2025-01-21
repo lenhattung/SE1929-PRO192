@@ -16,11 +16,17 @@ public class Supplier {
     private boolean status;
 
     public Supplier() {
+        this.id = 0;
+        setName("");
+        this.address = "";
+        this.phone = "";
+        this.status = false;
     }
 
     public Supplier(int id, String name, String address, String phone) {
         this.id = id;
-        this.name = name;
+        // this.name = name; => setName(name);
+        setName(name);
         this.address = address;
         this.phone = phone;
     }
@@ -38,7 +44,13 @@ public class Supplier {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if(name!=null && !name.isEmpty() && name.length()>=5 && name.length()<=50){
+            this.name = name;
+            this.status = true;
+        }else{
+            this.name = "no name";
+            this.status = false;
+        }
     }
 
     public String getAddress() {
@@ -54,6 +66,7 @@ public class Supplier {
     }
 
     public void setPhone(String phone) {
+        // phone.startsWith("0")
         this.phone = phone;
     }
 
