@@ -109,7 +109,4 @@ public class Supplier {
     public String toString() {
         return getId()+","+getName()+","+getAddress()+","+getPhone()+","+getStatusValue();
     }
-    
-    
-
 }
