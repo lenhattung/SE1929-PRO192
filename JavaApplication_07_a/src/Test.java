@@ -14,5 +14,6 @@ public class Test {
         
         Study st1 = new Study(50);
         System.out.println(st1.x);
+        
     }
 }

@@ -53,7 +53,7 @@ public class Vehicle {
     }
 
     public String getName() {
-        return name;
+        return toTitleCase2(name);
     }
 
     public void setName(String name) {
@@ -89,4 +89,54 @@ public class Vehicle {
         this.quantity = quantity;
     }
 
+    public String toTitleCase(String s) {
+        if (s != null) {
+            s = s.trim(); // xoa khoang trang 2 dau
+            String[] temp = s.split(" ");
+            for (int i = 0; i < temp.length; i++) {
+                if (!temp[i].isEmpty()) {
+                    String word = temp[i];
+                    word = word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
+                    temp[i] = word;
+                }
+            }
+            s = String.join(" ", temp);
+            while (s.indexOf("  ") >= 0) { // Tim vi tri cua 2 khoang trang ke nhau
+                s = s.replaceAll("  ", " "); // Replace "  " => " "
+            }
+        }
+        return s;
+    }
+
+    public String toTitleCase2(String s) {
+        if (s == null || s.isEmpty()) {
+            return "";
+        }
+
+        s = s.trim().replaceAll("\\s+", " "); // xóa khoảng trắng thừa
+
+        StringBuilder result = new StringBuilder();
+        String[] words = s.split(" ");
+
+        for (String word : words) {
+            if (!word.isEmpty()) {
+                result.append(Character.toUpperCase(word.charAt(0)))
+                        .append(word.substring(1).toLowerCase())
+                        .append(" ");
+            }
+        }
+
+        return result.toString().trim(); // xóa khoảng trắng cuối cùng
+    }
+    
+    public double getSubTotal(){
+        return this.price*this.quantity;
+    }
+    
+    @Override
+    public String toString() {
+        return id + ", " + getName() + ", " + String.format("%.2f",price) + ", " + quantity + ", "+String.format("%.2f",getSubTotal());
+    }
+    
+    
 }
