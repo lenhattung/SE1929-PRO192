@@ -32,6 +32,7 @@ public class Audi extends Vehicle {
     public void setReleasedYear(int releasedYear) {
         if (releasedYear < 2022 || releasedYear > 2025) {
             this.releasedYear = 2022;
+            return;
         }
         this.releasedYear = releasedYear;
     }
