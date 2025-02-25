@@ -41,5 +41,4 @@ public class VinaCal500MS implements ICalculator, ISort{
     }
     
     
-    
 }

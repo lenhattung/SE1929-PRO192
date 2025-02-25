@@ -24,5 +24,10 @@ public class CasioFX580MS implements ICalculator{
     public double sqr(double x) {
         return x*x;
     }
+
+    @Override
+    public void x() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
