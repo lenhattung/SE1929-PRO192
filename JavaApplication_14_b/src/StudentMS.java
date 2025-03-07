@@ -35,7 +35,7 @@ public class StudentMS {
     }
 
     public boolean contains(Student st) {
-
+        // có chứa st hay không?
     }
 
     public Student searchByName(String name) {
