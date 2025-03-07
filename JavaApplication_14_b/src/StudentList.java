@@ -1,43 +1,37 @@
+
+import java.util.ArrayList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author tungi
  */
-public class StudentMS {
-
-    private Student[] list;
-    private int numberOfStudents;
-
-    public StudentMS() {
-        list = new Student[1000];
-        numberOfStudents = 0;
-    }
+public class StudentList extends ArrayList<Student> {
 
     public void addStudent(Student st) {
-        this.list[numberOfStudents] = st;
-        numberOfStudents++;
+        this.add(st);
     }
 
     public void removeStudent(Student st) {
-
+        this.remove(st);
     }
 
     public void printAll() {
-
+        for (Student st : this) {
+            System.out.println(st);
+        }
     }
 
     public void printPassedStudent() {
-
-    }
-
-    public boolean contains(Student st) {
-        // có chứa st hay không?
-        return false;
+        for (Student st : this) {
+            if (st.getGpa() >= 5) {
+                System.out.println(st);
+            }
+        }
     }
 
     public Student searchByName(String name) {
