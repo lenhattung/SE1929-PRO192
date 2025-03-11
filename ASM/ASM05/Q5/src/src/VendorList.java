@@ -1,5 +1,7 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
+import javafx.print.Collation;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -44,5 +46,13 @@ public class VendorList extends ArrayList<Vendor>{
                 return v;
         }
         return null;
+    }
+    
+    public void printVendorList(){
+        ArrayList<Vendor> temp = (ArrayList<Vendor>)this.clone();
+        Collections.sort(temp);
+        for (Vendor vendor : temp) {
+            System.out.println(vendor);
+        }
     }
 }
