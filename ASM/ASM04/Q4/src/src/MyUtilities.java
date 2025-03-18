@@ -76,7 +76,7 @@ public class MyUtilities implements IUtilities {
         //abc12 def8.5 kdje
         //   12    8.5     
         
-        // Xin chao cac ban. Day la nam 2026.
+        // .Xin chao cac ban. Day la nam 2026.
         // Buoc 1
         String temp = "";
         for (int i = 0; i < value.length(); i++) {
